@@ -35,7 +35,7 @@ body{
     background-color: #3A6D8C;
     }
     ul{
-    
+    list-style: none;
     }
     .picture{
     padding: 10px;
