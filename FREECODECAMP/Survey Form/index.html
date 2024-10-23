@@ -8,16 +8,17 @@
 </head>
 <body>
     <div class="container">
-        <form action="" method="post">
-            <h2>Survey Form</h2>
+        <form action="" method="post" id="survey-form">
+            <h1 id="title">Survey Form</h1>
+            <p id="description">This is a survey for your college department</p>
             <div class="content">
                 <div class="input-box">
-                    <label for="name">Full name </label>
-                    <input type="text" placeholder="Enter full name" name="name" required>
+                    <label id="name-label" for="name">Full name </label>
+                    <input id="name" type="text" placeholder="Enter full name" name="name" required>
                 </div>
                 <div class="input-box">
-                    <label for="name">Email </label>
-                    <input type="email" placeholder="Enter Email" name="email" required>
+                    <label id="email-label" for="name">Email </label>
+                    <input id="email" type="email" placeholder="Enter Email" name="email" required>
                 </div>
                 <div class="input-box">
                     <label for="ID_number">Id number </label>
@@ -26,8 +27,8 @@
                 
                 <!--Survey Questions-->
                 <div class="input-box">
-                <label for="age">Age: </label>
-                <input type="number" id="age" min="18" max="99" required>
+                <label id="number-label" for="age">Age: </label>
+                <input  type="number" id="number" min="18" max="99" placeholder="Enter your age" required>
                 </div>
                 <span class="titledis">Gender</span>
                 <div class="radio-group">
@@ -70,6 +71,22 @@
                     <label for="good">Good</label>
                     <input type="radio" id="other" name="rating" value="Other">
                     <label for="other">Other</label>
+                </div>
+
+                <div class="">
+                    <span class="titledis">Preferred Learning Methods:</span>
+                    <div>
+                        <input type="checkbox" id="visual" name="learning_methods" value="Visual">
+                        <label for="visual">Visual (e.g., videos, diagrams)</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="auditory" name="learning_methods" value="Auditory">
+                        <label for="auditory">Auditory (e.g., lectures, discussions)</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="kinesthetic" name="learning_methods" value="Kinesthetic">
+                        <label for="kinesthetic">Kinesthetic (e.g., hands-on activities)</label>
+                    </div>
                 </div>
 
                 <div>
