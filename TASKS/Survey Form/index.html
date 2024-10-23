@@ -18,19 +18,18 @@
                 <div class="input-box">
                     <label for="name">Email </label>
                     <input type="email" placeholder="Enter Email" name="email" required>
-                    <small class="hint">Please enter a valid email address</small>
                 </div>
                 <div class="input-box">
                     <label for="ID_number">Id number </label>
                     <input type="text" placeholder="Enter ID Number" name="ID_number" required>
                 </div>
-                <div class="input-box">
-                <!--Survey Questions-->
                 
+                <!--Survey Questions-->
+                <div class="input-box">
                 <label for="age">Age: </label>
                 <input type="number" id="age" min="18" max="99" required>
                 </div>
-                <span class="gender-title">Gender</span>
+                <span class="titledis">Gender</span>
                 <div class="radio-group">
 
                     <input type="radio" id="male" name="gender" value="Male">
@@ -39,12 +38,47 @@
                     <label for="female">Female</label>
                     <input type="radio" id="other" name="gender" value="Other">
                     <label for="other">Other</label>
-             
                 </div>
-                   
+            </div>
+            <span class="titledis">What is your College Department?</span>
+            <div class="input-box">
+                <label for="">
+                    <select name="" id="dropdown">
+                    <option value="">Criminal Justice Education</option>
+                    <option value="">Information Technology and Computer Science</option>
+                    <option value="">Teacher Education</option>
+                    <option value="">Accountacy</option>
+                    <option value="">Teacher Education</option>
+                    <option value="">Arts and Sciences</option>
+                    <option value="">Business Administration</option>
+                    <option value="">Engineering and Architechture</option>
+                    <option value="">Hospitality and Tourism Management</option>
+                    <option value="">Nursing</option>
+                    <option value="">Law</option>
+                    </select>
+                </label>
             </div>
 
+
+            
+                <span class="titledis">How is your current course college experience?</span>
+                <div class="radio-group">
+                    <input type="radio" id="male" name="rating" value="Great">
+                    <label for="great">Great</label>
+                    <input type="radio" id="female" name="rating" value="Good">
+                    <label for="good">Good</label>
+                    <input type="radio" id="other" name="rating" value="Other">
+                    <label for="other">Other</label>
+                </div>
+
+                <div>
+                    <p>What are the reccomendations for your college department?</p>
+                    <textarea name="comments" id="5" cols="50"></textarea>
+                </div>
         </form>
+
+        
     </div>
+
 </body>
 </html>
