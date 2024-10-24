@@ -1,10 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,500;1,500&display=swap');
 body{
-    padding: 1.5;
-    margin: 1.5;
+    height: 100vh;
+    display: flex;
+    margin: 0;
+}
+#main-doc{
+    display: flex;
+    width: 100%;
 }
 h1{
     font-family: "Anton", sans-serif;
     font-weight: 400;
     font-style: normal;
 }   
+.nav-title{
+    font-weight: 900;
+    font-size: 40px;
+}
+li{
+    list-style: none;
+}
+.sidebar{
+    background: #7AB2D3;
+    height: 100%;
+    width: 230px;
+    padding: 5px;
+}
+#main-section{
+    flex: 1;
+    padding: 20px;
+}
