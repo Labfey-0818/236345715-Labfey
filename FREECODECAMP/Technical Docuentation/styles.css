@@ -19,6 +19,7 @@ body{
     font-size: 40px;
     color: #DFF2EB;
     font-family: "Roboto", sans-serif;
+    text-align: center;
 }
 li{
     list-style: none;
@@ -79,4 +80,13 @@ li .key_tures{
     margin-bottom: 10px;
     line-height: 1.5;
     color: #fff;
+}
+.nav-links{
+    align-items: center;
+}
+@media (max-width: 780px){
+    .sidebar{
+        width:100%;
+        float: auto;
+    }
 }
