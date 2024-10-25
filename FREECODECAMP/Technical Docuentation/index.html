@@ -12,13 +12,12 @@
         <div>
             <nav id="navbar" class="sidebar">
                 <ul>
-                    <span><h1 id="title" class="nav-title">Javascript vs. Java</h1></span>
-                    <li><a href="#introduction">Introductrion</a></li>
-                    <li><a href="#java">Java</a></li>
-                    <li><a href="#javascript">Javascript</a></li>
-                    <li><a href="#key_features">Key Features</a></li>
-                    <li><a href="#js_vs_java">JavaScript vs. Java: Key Differences</a></li>
-                    <li><a href="#references">References</a></li>
+                    <span><header><h1 id="title" class="nav-title">Javascript vs. Java</h1></header></span>
+                    <li><a class="nav-link" href="#introduction">Introductrion</a></li>
+                    <li><a class="nav-link" href="#java">Java</a></li>
+                    <li><a class="nav-link" href="#javascript">Javascript</a></li>
+                    <li><a class="nav-link" href="#key_features">Key Features</a></li>
+                    <li><a class="nav-link" href="#js_vs_java">JavaScript vs. Java: Key Differences</a></li>
                 </ul>
             </nav>
         </div>
@@ -31,7 +30,7 @@
                 <p>JavaScript is a high-level scripting language commonly used for enhancing web interactivity and dynamic content. Originally developed to run in web browsers, JavaScript now powers both client-side and server-side applications, making it an essential tool for modern web developers. Its dynamic typing, event-driven nature, and asynchronous programming capabilities enable fast, responsive user experiences, particularly when paired with frameworks like React and Node.js.</p>
         <!--End of title-->
         <!--Start of java-->
-            <section class="main-section">
+            <section class="main-section" id="Java">
                     <header><h2 id="java">Java</h2></header>
                     <h3>What is Java?</h3>
                     <p>Java is a versatile, powerful programming language known for its simplicity, reliability, and cross-platform capabilities. Originally developed by Sun Microsystems in the mid-1990s, Java quickly became popular for its "write once, run anywhere" philosophy. This means that Java applications can run on any system with a Java Virtual Machine (JVM), making it a go-to choice for building everything from desktop applications to large-scale enterprise systems.</p>
@@ -48,10 +47,25 @@
                         }
                         </code>             
                     </pre>
+                    <pre id="javacode">
+                        <code>
+                public class SquareCalculator {
+                    public static void main(String[] args) {
+                        int number = 5;
+                        int result = square(number);
+                        System.out.println("The square of " + number + " is: " + result);
+                    }
+                
+                    public static int square(int num) {
+                        return num * num;
+                    }
+                }
+                        </code>
+                    </pre>
                 </section><br>
                 <!--end of java-->
                 <!--Start of Javascript-->
-                <section class="main-section">
+                <section class="main-section" id="JavaScript">
                     <header><h2 id="javascript">JavaScript</h1></header>
                     <p>JavaScript is a dynamic, high-level programming language that has become essential in web development. Initially created by Netscape in 1995 to add interactivity to web pages, JavaScript has since evolved into a versatile language that runs both on the client side, powering web interfaces and user interactions, and on the server side, enabling backend development with frameworks like Node.js. JavaScript's flexibility, along with its ability to work seamlessly with HTML and CSS, has made it the backbone of modern web applications.</p><br>
                     <p>One of JavaScript's most powerful features is its event-driven, asynchronous nature, which allows web pages to respond to user actions and update content without needing to reload. This is achieved through tools like promises and async/await syntax, which handle tasks such as fetching data from servers or managing animations. This enables developers to create responsive, engaging user experiences that load quickly and function smoothly.</p><br>
@@ -74,23 +88,33 @@
             console.log(greet("Alice")); // Output: Hello, Alice!
                     </code>
                 </pre> <br>
+                <pre id="javascript_code">
+                    <code>
+            function square(number) {
+                return number * number;
+            }
+            
+            console.log(square(5)); // Output: 25
+            
+                    </code>
+                </pre>
             </section>
             <!--end of javascript-->
             <!--Key Features-->
-            <section class="main-section">
+            <section id="Key_Features" class="main-section">
                 <header><h2 id="key_features">Key Features</h2></header>
 
             <h3>Javascript Key features: </h3>
             <ul>
-                <li>Dynamic Typing: JavaScript does not require variable types to be defined, making it flexible and fast for scripting.</li>
-                <li>Event-Driven and Asynchronous: JavaScript’s event-driven model enables it to respond to user actions in real time, while asynchronous programming through async/await and promises allows for smooth, non-blocking tasks.</li>
-                <li>Prototype-Based Inheritance: JavaScript uses prototype-based inheritance, where objects can directly inherit from other objects.</li>
-                <li>Cross-Browser Compatibility: JavaScript can run on almost any web browser, ensuring wide compatibility across devices.</li>
-                <li>Versatile Ecosystem: JavaScript has a rich set of frameworks and libraries like React, Vue, and Node.js, allowing it to be used for front-end, back-end, and even mobile development.</li>
+                <li><p>Dynamic Typing: JavaScript does not require variable types to be defined, making it flexible and fast for scripting.</p></li>
+                <li><p>Event-Driven and Asynchronous: JavaScript’s event-driven model enables it to respond to user actions in real time, while asynchronous programming through async/await and promises allows for smooth, non-blocking tasks.</p></li>
+                <li><p>Prototype-Based Inheritance: JavaScript uses prototype-based inheritance, where objects can directly inherit from other objects.</p></li>
+                <li><p>Cross-Browser Compatibility: JavaScript can run on almost any web browser, ensuring wide compatibility across devices.</p></li>
+                <li><p>Versatile Ecosystem: JavaScript has a rich set of frameworks and libraries like React, Vue, and Node.js, allowing it to be used for front-end, back-end, and even mobile development.</p></li>
             </ul>
             </section> 
             <br>
-            <section class="main-section">
+            <section id="Java_Key_features:" class="main-section">
                 <header><h3>Java Key features: </h3></header>
                 <li>Object-Oriented Programming (OOP): Java’s class-based, object-oriented structure makes it ideal for creating reusable, modular code in large-scale applications.</li>
                 <li>Platform Independence: Java applications are compiled into bytecode, which runs on the Java Virtual Machine (JVM), making them cross-platform and compatible with any OS that supports the JVM.</li>
@@ -100,7 +124,7 @@
             </section><br>
             <!--end of key features-->
             <!--Start of the differences-->
-            <section class="main-section">
+            <section id="JavaScript_vs._Java:_Key_Differences" class="main-section">
                <header><h2 id="js_vs_java">JavaScript vs. Java: Key Differences</h2></header> 
                 <table border="1" cellpadding="5" cellspacing="0">
                     <thead>
