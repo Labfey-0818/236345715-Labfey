@@ -6,3 +6,44 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+body{
+    background-image: url(image-from-rawpixel-id-3864325-jpeg.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+}
+
+header .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar .menu-links {
+    display: flex;
+    gap: 40px;
+}
+
+.navbar .logo{
+    font-size: 2.1rem;
+    font-weight: 600;
+}
+
+.navbar .logo span{
+    color: #C06B3E;
+}
