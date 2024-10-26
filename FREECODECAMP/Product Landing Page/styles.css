@@ -13,9 +13,14 @@ body{
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.3);
 }
+.image-content{
+    display: flex;
+    justify-content: space-between;
+}
 .navbar a{
     color: #fff;
     text-decoration: none;
+    transition: 0.2s ease;
 }
 
 header{
@@ -24,6 +29,7 @@ header{
     left: 0;
     width: 100%;
     padding: 20px;
+    z-index: 1000;
 }
 
 header .navbar{
@@ -46,4 +52,150 @@ header .navbar{
 
 .navbar .logo span{
     color: #C06B3E;
+}
+
+.navbar a:hover{
+    color: #C06B3E;
+}
+
+.super-section{
+    height: calc(100vh - 80px); 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.super-section .content{
+    color: #fff;
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.super-section .content h1{
+    font-size: 3rem;
+    max-width: 600px;
+}
+
+.super-section .content p {
+    font-weight: 300;
+    margin-top: 15px;
+    max-width: 600px;
+}
+
+.super-section .content button{
+    background: #fff;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 6px;
+    padding: 12px 30px;
+    margin-top: 38px;
+    cursor: pointer;
+}
+
+.super-section .content button:hover{
+    color: #fff;
+    background: #C06B3E;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 80px;
+}
+
+.ptoduct-box{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+#about{
+    padding: 20px;
+    text-align: center;
+}
+
+.product-box:hover{
+    transform: scale(1.05);
+}
+
+#contact{
+    padding: 20px;
+    text-align: center;
+}
+
+#form{
+    display: inline-block;
+}
+
+#email{
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#submit{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #C06B3E;
+    color: #fff;
+    cursor: pointer;
+}
+
+#submit:hover{
+    background-color: #A0522D;
+}
+footer{
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+#about, #contact{
+    padding: 20px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+@media screen and (max-width: 900px) {
+    .navbar .menu-links {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 260px;
+        height: 100vh;
+        background: #fff;
+        padding: 70px 40px 0;
+    }
+
+    .navbar a {
+        color: #000;
+    }
+
+    .super-section .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-content, .image-content {
+        width: 100%;
+        text-align: center;
+    }
 }
