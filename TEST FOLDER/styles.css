@@ -185,3 +185,41 @@ footer {
         text-align: center;
     }
 }
+
+/* Start of Achievements Section*/
+section{
+    position: relative;
+}
+.arrow{
+    position: absolute;
+    inset-inline-end: 10%;
+    transition: var(--transition)
+}
+.arrow-hover{
+    margin-block-start: 2rem;
+}
+.achievements-container{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap: 4rem;
+}
+.achievements-box{
+    border: 1px solid var(--color-black);
+    border-radius: 30px;
+    padding: 24px;
+}
+.achievements-box h2{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.achievements{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.ex-div{
+    margin: auto;
+    display: flex;
+    gap: 20px;
+}
+/* End of Achievements Section*/
