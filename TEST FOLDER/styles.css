@@ -190,14 +190,7 @@ footer {
 section{
     position: relative;
 }
-.arrow{
-    position: absolute;
-    inset-inline-end: 10%;
-    transition: var(--transition)
-}
-.arrow-hover{
-    margin-block-start: 2rem;
-}
+
 .achievements-container{
     display: grid;
     grid-template-columns:1fr 1fr;
